@@ -57,6 +57,10 @@ AFRAME.registerComponent('basic-scene', {
         plane.setAttribute('height', 4);       
         plane.setAttribute('color', "#7BC8A4");
         this.el.appendChild(plane);
+        plane.addEventListener('click', function() {
+            width = plane.getAttribute('width');
+            plane.setAttribute('width', width * 2);
+    });
 
     }
 });
