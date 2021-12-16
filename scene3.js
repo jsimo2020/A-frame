@@ -21,7 +21,7 @@ AFRAME.registerComponent('basic-scene', {
                                        'to': {x: -1, y: 0.5, z: -3},
                                        'dur': 1000});
         this.el.appendChild(box); 
-
+    
         // Sphere
         // <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
         let sphere = document.createElement('a-sphere');
