@@ -18,7 +18,7 @@ AFRAME.registerComponent('basic-scene', {
         this.el.appendChild(box); 
         box.addEventListener('click', function() {
              let sphere = document.createElement('a-sphere');
-             sphere.setAttribute('position', {x: -1, y: 1.25, z: -3});
+             sphere.setAttribute('position', {x: -1, y: 1.75, z: -3});
              sphere.setAttribute('radius', 0.75);
              sphere.setAttribute('color', "red");
              sphere.setAttribute('animation', {'property': 'position',
