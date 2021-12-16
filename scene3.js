@@ -40,7 +40,7 @@ AFRAME.registerComponent('basic-scene', {
                 sphere.setAttribute('color', '#EF2D5E');
             };
             position = sphere.getAttribute('position');
-            sphere.setAttribute('position', {x:position.x, y: position.y, z: position.z - 1});
+            sphere.setAttribute('position', {x:position.x, y: position.y, z: position.z-1});
     });
         
         // Cylinder
@@ -64,6 +64,8 @@ AFRAME.registerComponent('basic-scene', {
         plane.addEventListener('click', function() {
             width = plane.getAttribute('width');
             plane.setAttribute('width', width * 2);
+            height = plane.getAttribute('width');
+            plane.setAttribute('height', height * 2);
     });
 
     }
