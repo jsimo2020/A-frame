@@ -18,12 +18,11 @@ AFRAME.registerComponent('globe', {
 AFRAME.registerComponent('break', {
 
     init: function() {
+        scene = document.querySelector('a-scene');
         el = this.el;
         el.addEventListener('click', function() {
-          
-             el.setAttribute('radius', 0);
-            
-            console.log('parada');
+          scene.removeChild(el)
+             
     });   
         
     }
