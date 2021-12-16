@@ -34,7 +34,7 @@ AFRAME.registerComponent('basic-scene', {
         let sphere = document.createElement('a-sphere');
         sphere.setAttribute('position', {x:0, y: 1.25, z: -5});
         sphere.setAttribute('radius', 1.25);
-        sphere.setAttribute('color', "#EF2D5E");
+        sphere.setAttribute('color', "green");
         this.el.appendChild(sphere);
         sphere.addEventListener('click', function() {
             color = sphere.getAttribute('color');
