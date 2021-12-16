@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', function() {
         let cylinder = document.createElement('a-cylinder');
         cylinder.setAttribute('position', {x: 1, y: 0.75, z: -3});
         cylinder.setAttribute('radius', 0.5);
-        cylinder.setAttribute('height', 0.5);       
+        cylinder.setAttribute('height', 1.5);       
         cylinder.setAttribute('color', "#FFC65D");
         scene.appendChild(cylinder);
 
