@@ -5,6 +5,28 @@ if (typeof AFRAME === 'undefined') {
     throw new Error('Component attempted to register before AFRAME was available.');
 }
 
+AFRAME.registerComponent('globe', {
+
+    init: function() {
+        this.el.setAttribute('animation', {'property': 'position',
+                                       'to': {x: -1, y: 200, z: -3},
+                                       'dur': 10000});    
+        
+    }
+    
+AFRAME.registerComponent('break', {
+
+    init: function() {
+        el = this.el;
+        el.addEventListener('click', function() {
+          
+             el.setAttribute('radius', 0);
+          
+    });   
+        
+    }
+
+
 AFRAME.registerComponent('basic-scene', {
 
     init: function() {
@@ -21,9 +43,8 @@ AFRAME.registerComponent('basic-scene', {
              sphere.setAttribute('position', {x: -1, y: 1.75, z: -3});
              sphere.setAttribute('radius', 0.75);
              sphere.setAttribute('color', "red");
-             sphere.setAttribute('animation', {'property': 'position',
-                                       'to': {x: -1, y: 200, z: -3},
-                                       'dur': 10000});
+             sphere.setAttribute('globe', null);
+             sphere.setAttribute('break', null);
              let scene = document.querySelector('a-scene');
              scene.appendChild(sphere);
           
