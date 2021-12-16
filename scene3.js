@@ -15,12 +15,15 @@ AFRAME.registerComponent('basic-scene', {
         box.setAttribute('position', {x: -1, y: 0.5, z: -3});
         box.setAttribute('rotation', {x: 0, y: 45, z: 0});
         box.setAttribute('color', "#4CC3D9");
-        box.setAttribute('animation', {'startEvents': 'click',
-                                       'property': 'position',
-                                       'from': {x: -1, y: 1.5, z: -3},
-                                       'to': {x: -1, y: 0.5, z: -3},
-                                       'dur': 1000});
         this.el.appendChild(box); 
+        box.addEventListener('click', function() {
+             let sphere = document.createElement('a-sphere');
+             sphere.setAttribute('position', {x:0, y: 1.25, z: -5});
+             sphere.setAttribute('radius', 1.25);
+             sphere.setAttribute('color', "red");
+             this.el.appendChild(sphere);
+          
+    });
     
         // Sphere
         // <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
@@ -37,8 +40,9 @@ AFRAME.registerComponent('basic-scene', {
                 sphere.setAttribute('color', '#EF2D5E');
             };
             position = sphere.getAttribute('position');
-            sphere.setAttribute('position', {x:position.x, y: position.y, z: position.z + 1});
+            sphere.setAttribute('position', {x:position.x, y: position.y, z: position.z - 1});
     });
+        
         // Cylinder
         // <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
         let cylinder = document.createElement('a-cylinder');
