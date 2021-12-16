@@ -18,12 +18,12 @@ AFRAME.registerComponent('basic-scene', {
         this.el.appendChild(box); 
         box.addEventListener('click', function() {
              let sphere = document.createElement('a-sphere');
-             sphere.setAttribute('position', {x:0, y: 1.25, z: -5});
-             sphere.setAttribute('radius', 1.25);
+             sphere.setAttribute('position', {x: -1, y: 0.5, z: -3});
+             sphere.setAttribute('radius', 0.75);
              sphere.setAttribute('color', "red");
              sphere.setAttribute('animation', {'property': 'position',
-                                       'from': {x:0, y: 1.25, z: -5},
-                                       'to': {x:0, y: 125, z: -5},
+                                       'from': {x: -1, y: 0.5, z: -3},
+                                       'to': {x: -1, y: 500, z: -3},
                                        'dur': 10000});
              this.el.appendChild(sphere);
           
