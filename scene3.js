@@ -24,7 +24,8 @@ AFRAME.registerComponent('basic-scene', {
              sphere.setAttribute('animation', {'property': 'position',
                                        'to': {x: -1, y: 500, z: -3},
                                        'dur': 10000});
-             this.el.appendChild(sphere);
+             let scene = document.querySelector('a-scene');
+             scene.appendChild(sphere);
           
     });
     
