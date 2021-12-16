@@ -35,6 +35,8 @@ AFRAME.registerComponent('basic-scene', {
                 sphere.setAttribute('color', 'red');
             } else {
                 sphere.setAttribute('color', '#EF2D5E');
+            position = sphere.getAttribute('position');
+            sphere.setAttribute('position', {x:position.x +1, y: 1.25, z: -5});
             };
     });
         // Cylinder
