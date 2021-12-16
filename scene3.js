@@ -10,7 +10,7 @@ AFRAME.registerComponent('globe', {
     init: function() {
         this.el.setAttribute('animation', {'property': 'position',
                                        'to': {x: -1, y: 200, z: -3},
-                                       'dur': 10000});    
+                                       'dur': 1000000});    
         
     }
 });
