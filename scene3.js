@@ -19,7 +19,7 @@ AFRAME.registerComponent('break', {
 
     init: function() {
         scene = document.querySelector('a-scene');
-        el = this.el;
+        let el = this.el;
         el.addEventListener('click', function() {
           scene.removeChild(el)
              
