@@ -13,7 +13,7 @@ AFRAME.registerComponent('globe', {
                                        'dur': 10000});    
         
     }
-}
+});
     
 AFRAME.registerComponent('break', {
 
@@ -26,7 +26,7 @@ AFRAME.registerComponent('break', {
     });   
         
     }
-}
+});
 
 AFRAME.registerComponent('basic-scene', {
 
