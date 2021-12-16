@@ -21,6 +21,10 @@ AFRAME.registerComponent('basic-scene', {
              sphere.setAttribute('position', {x:0, y: 1.25, z: -5});
              sphere.setAttribute('radius', 1.25);
              sphere.setAttribute('color', "red");
+             sphere.setAttribute('animation', {'property': 'position',
+                                       'from': {x:0, y: 1.25, z: -5},
+                                       'to': {x:0, y: 125, z: -5},
+                                       'dur': 10000});
              this.el.appendChild(sphere);
           
     });
