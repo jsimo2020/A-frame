@@ -10,7 +10,7 @@ AFRAME.registerComponent('globe', {
     init: function() {
         this.el.setAttribute('animation', {'property': 'position',
                                        'to': {x: -1, y: 200, z: -3},
-                                       'dur': 1000000});    
+                                       'dur': 100000});    
         
     }
 });
@@ -22,7 +22,8 @@ AFRAME.registerComponent('break', {
         el.addEventListener('click', function() {
           
              el.setAttribute('radius', 0);
-          
+            
+            console.log('parada');
     });   
         
     }
